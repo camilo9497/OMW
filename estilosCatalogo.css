@@ -1,0 +1,173 @@
+* a,
+p,
+h3,
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+input {
+  border: none;
+  border-bottom: 1px solid gray;
+  padding-left: 8px;
+  outline: none;
+}
+.container-buscar {
+  display: flex;
+  justify-content: space-between;
+  max-width: 740px;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+.container-group {
+  display: flex;
+  flex-direction: column;
+}
+.container-group label {
+  font-weight: bold;
+  color: #583667;
+}
+.container-group input {
+  border: none;
+  border-bottom: 1px solid gray;
+  padding-left: 8px;
+  outline: none;
+  height: 40px;
+  color: #583667;
+}
+.container-group-fechas {
+  display: flex;
+}
+.date {
+  margin-right: 30px;
+}
+.ubicacion-input {
+  width: 230px;
+}
+.container-boton {
+  display: flex;
+  align-items: flex-end;
+}
+.container-boton button {
+  height: 40px;
+  width: 106px;
+  border-radius: 10px;
+  border: none;
+  background: #583667;
+  color: white;
+  cursor: pointer;
+  outline: none;
+}
+.container-filtro-resultados {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 0 30px;
+  display: flex;
+}
+.container-filtro {
+  min-width: 220px;
+}
+.container-titulo-filtro {
+  display: flex;
+  align-items: center;
+  font-size: 19px;
+  color: #583667;
+  height: 26px;
+}
+.container-titulo-filtro i {
+  width: 10px;
+  height: 10px;
+  background: #583667;
+  margin-right: 10px;
+}
+.container-item-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #583667;
+  height: 26px;
+  margin-top: 11px;
+  cursor: pointer;
+}
+.container-item-title i {
+  width: 10px;
+  height: 10px;
+  background: #583667;
+}
+.container-content-filtro {
+  padding: 10px;
+}
+.group-content-filtro {
+  margin-bottom: 5px;
+  color: #583667;
+}
+.container-resultados {
+  margin-left: 60px;
+}
+.text-resultados-mostrados {
+  font-size: 20px;
+  color: #583667;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.container-resultados-content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  row-gap: 30px;
+}
+.container-titulo-precio {
+  display: flex;
+  justify-content: space-between;
+}
+.precio {
+  font-size: 17px;
+  font-weight: bold;
+  color: #583667;
+  padding-right: 8px;
+}
+@media screen and (max-width: 1200px) {
+  .container-resultados {
+    margin-left: 35px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .container-content-filtro {
+    padding-left: 3px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .container-buscar {
+    flex-direction: column;
+    max-width: 500px;
+    padding: 0 30px;
+  }
+  .container-group input {
+    width: 100%;
+  }
+  .container-group {
+    width: 100%;
+  }
+  .container-group-fechas {
+    margin: 13px 0;
+  }
+}
+@media screen and (max-width: 650px) {
+  .container-filtro-resultados {
+    flex-direction: column;
+  }
+  .container-resultados {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  .container-group-fechas {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 320px) {
+  .card-interes {
+    height: 150px;
+  }
+}

@@ -1,0 +1,347 @@
+* a,
+p,
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero {
+  width: 100%;
+  height: 688px;
+  position: relative;
+  display: inline-flex;
+}
+.hero img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+}
+section h1 {
+  color: #9c9c9c;
+  text-align: center;
+  font-size: 36px;
+  color: #583667;
+  text-transform: uppercase;
+}
+.container-ventana-formulario {
+  width: 40%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-busqueda {
+  color: #583667;
+  width: 75%;
+  margin: 0 auto;
+  background: white;
+  border-radius: 14px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.container-fechas {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+.container-busqueda h3 {
+  font-size: 21px;
+  line-height: 21px;
+}
+.group1 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+.campo-donde {
+  border: none;
+  border-bottom: 1px solid gray;
+  height: 30px;
+  outline: none;
+}
+.group2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 8px;
+}
+.group2 label {
+  margin-bottom: 8px;
+}
+.group2 input {
+  border: none;
+  border-bottom: 1px solid gray;
+  padding-left: 8px;
+  outline: none;
+}
+.group2:first-child {
+  margin-right: 15px;
+}
+.container-btn {
+  width: 100%;
+}
+.container-btn button {
+  width: 100%;
+  height: 44px;
+  background: #583667;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  margin-top: 15px;
+  cursor: pointer;
+  outline: none;
+}
+.container-cards {
+  overflow-x: scroll;
+  width: 100%;
+  display: flex;
+}
+.container-card-zona {
+  min-width: 474px;
+  box-shadow: -4px 6px 23px -13px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  padding-bottom: 8px;
+  margin-right: 50px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+section img {
+  width: 100%;
+  height: 270px;
+  border-radius: 14px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  object-fit: cover;
+}
+.info-card {
+  margin: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.info-title,
+.info-precio {
+  font-size: 22px;
+  font-weight: bold;
+  color: #583667;
+}
+.info-descripcion {
+  font-size: 18px;
+  font-weight: 500;
+  color: #583667;
+}
+.info-precio {
+  font-weight: bold;
+  color: #583667;
+  font-size: 20px;
+}
+.container-card-interes {
+  box-shadow: -4px 6px 23px -13px rgba(0, 0, 0, 0.75);
+  border-radius: 14px;
+  cursor: pointer;
+}
+.container-interes {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 30px;
+}
+.card-interes {
+  width: 100%;
+  height: 180px;
+}
+.info-card-interes {
+  width: 100%;
+  margin-top: 10px;
+  padding: 0 10px 10px 10px;
+  box-sizing: border-box;
+}
+.card-interes img {
+  width: 100%;
+  height: 100%;
+  border-bottom: 5px solid #583667;
+}
+.container-calificacion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container-text-calificacion {
+  display: flex;
+  justify-content: space-between;
+}
+.container-calificacion i {
+  width: 15px;
+  height: 15px;
+  background: #583667;
+  margin-right: 8px;
+}
+.info-title-interes {
+  color: #583667;
+  font-weight: bold;
+  font-size: 17px;
+}
+.info-descripcion-interes,
+.info-otro-interes {
+  color: #583667;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.container-categorias {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 30px;
+  padding: 30px;
+}
+.card-categorias {
+  position: relative;
+  box-sizing: border-box;
+  height: 290px;
+  cursor: pointer;
+}
+.card-categorias img {
+  border-radius: 10px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.capa {
+  background: black;
+  opacity: 0.6;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  border-radius: 10px;
+}
+.container-text-categorias {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.title-card,
+.description-card {
+  color: white;
+  text-align: center;
+}
+.title-card {
+  font-size: 30px;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+@media screen and (max-width: 1100px) {
+  .container-ventana-formulario {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .hero {
+    height: auto;
+  }
+  .container-card-zona {
+    min-width: 400px;
+  }
+  .card-zona img {
+    height: 250px;
+  }
+}
+@media screen and (max-width: 860px) {
+  .container-ventana-formulario {
+    width: 100%;
+  }
+  .container-busqueda {
+    width: 50%;
+    padding-top: 0;
+  }
+}
+@media screen and (max-width: 700px) {
+  .hero {
+    height: 370px;
+  }
+  section h1 {
+    font-size: 30px;
+  }
+  .container-busqueda {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .container-card-zona {
+    min-width: 320px;
+  }
+  .card-zona img {
+    height: 200px;
+  }
+  section h1 {
+    font-size: 22px;
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .container-categorias {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+  .card-categorias {
+    height: 180px;
+  }
+  .container-card-zona {
+    margin-right: 30px;
+    min-width: 210px;
+  }
+  .container-busqueda {
+    width: 90%;
+  }
+  .hero {
+    height: 400px;
+  }
+  .info-card {
+    padding: 10px;
+    margin: 0;
+  }
+  .info-title {
+    font-size: 18px;
+  }
+  .info-descripcion {
+    font-size: 14px;
+  }
+  .info-precio {
+    font-size: 16px;
+  }
+  .card-zona img {
+    height: 130px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .container-fechas {
+    flex-direction: column;
+  }
+  .container-btn button {
+    height: 40px;
+  }
+  .campo-donde {
+    height: 25px;
+  }
+}
